@@ -1,0 +1,23 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	width: 1143px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+}

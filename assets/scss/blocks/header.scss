@@ -1,0 +1,54 @@
+.header {
+	.logo {
+		margin: 20px 0 21px;
+	}
+
+	&__wrapp {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__list {
+		display: flex;
+	}
+
+	&__item:not(:last-child) {
+		margin-right: 1.94em;
+	}
+
+	&__item-link {
+		font-size: 1.12em;
+		font-weight: 400;
+		line-height: 1.69em;
+
+		text-transform: uppercase;
+		color: $black;
+	}
+
+	&__item-link {
+		display: inline-block;
+		position: relative;
+		text-decoration: none;
+	}
+	&__item-link:before {
+		display: block;
+		position: absolute;
+		content: "";
+		height: 2px;
+		width: 0;
+		background: $black;
+		transition: width 0.3s ease-in-out;
+		left: 0;
+		bottom: 0;
+	}
+
+	&__item-link:hover:before {
+		width: 100%;
+	}
+}
+
+.search,
+.heart {
+	margin-right: 2.56em;
+}
